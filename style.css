@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.nav1{
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    padding: 8px;
+}
+#nav1link{
+    text-decoration: none;
+    color: white;
+}
+#nav1link img{
+    height: 15px;
+}
+.nav2{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    background-color: rgb(121, 231, 195);
+    position: relative;
+    top: 0px;
+}
+#joinnow{
+    background: none;
+    text-decoration: none;
+    border: none;
+    background-color:rgba(14, 14, 14, 0.664);
+    padding: 10px;
+    border-radius: 7px;
+}
+.nav3{
+    height: 11px;
+    background-color: rgba(14, 14, 14, 0.664);
+    
+    margin-top: 2px;
+    
+}
+#flex1{
+    width: 100vw;
+    padding-top: 3px;
+}
+.poster1{
+    position: relative;
+}
+#poster1text{
+    font-size: 5vh;
+    position: absolute;
+    animation: anime1 2s ease-in-out 3s 1 forwards ;
+    color: azure;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+ @keyframes anime1{
+    from{
+        top: 30vh;
+        left: 5vw;
+    }
+    to{
+        top: 30vh;
+        left: 50vw;
+    }
+}
+.legacy{
+    display: flex;
+    justify-content: space-around;
+}
+.legacytext{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5vw;
+    text-shadow: teal 1px 0 10px;
+}
+.legacyimg img{
+    width: 30vw;
+    /* padding: 5vw; */
+    margin-top: 8vh;
+    margin-right: 8vw;
+    box-shadow: 3px 3px 10px 5px grey;
+}
+.tour{
+    display: flex;
+}
+#tourvideo video{
+    height: 30vh;
+    padding-top: 2vh;
+    /* box-shadow: 0px 0px 10px 5px grey; */
+    padding-bottom: 2vh;
+}
