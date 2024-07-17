@@ -116,6 +116,82 @@ nav ul li a{
     
 }
 
+.body2{
+    width: 100%;
+    height: 50vh;
+    background-color: aqua;
+}
+.body2{
+    background-image: url(https://t4.ftcdn.net/jpg/02/67/40/21/360_F_267402109_jZvsqRQUvSxohAOmcUt549jlapqoRHM0.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+.slider{
+    position: relative;
+    
+}
+.slider .wrapper{
+    width: 60vw;
+    height: 40vh;
+    box-shadow: 10px 10px 10px;
+    margin: 5rem auto;
+    overflow: hidden;
+    padding: 6vh;
+    
+}
+.slider .wrapper .wrapperholder{
+    display: grid;
+    grid-template-columns: repeat(4,100%);
+    height: 100%;
+    width: 100%;
+    animation: sliders 30s ease-in-out infinite alternate ;
+    
+}
+.slider #sliderimg1 {
+    background-color: rgb(30, 235, 235);
+     background-position: center;
+}
+.slider #sliderimg2 {
+    background-color: rgb(141, 155, 155);
+     background-position: center;
+}
+.slider #sliderimg3 {
+    background-color: rgb(73, 92, 92);
+     background-position: center;
+}
+.slider #sliderimg4 {
+    background-color: rgb(30, 235, 235);
+     background-position: center;
+}
+.slider .buttonholder .button{
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2px;   
+}
+.slider .buttonholder{
+    position: absolute;
+    left: 45%;
+    bottom: 0%;
+}
+@keyframes sliders {
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(0%);}    
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    80%{transform: translateX(-300%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+}
+
 .card{
     background-color: white;
     width: 198px; 
