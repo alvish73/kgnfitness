@@ -111,21 +111,20 @@ nav ul li a{
     width: 30vw;
     margin-top: 8vh;
     margin-right: 8vw;
-    box-shadow: 3px 3px 10px 5px grey;
+    box-shadow: 3px 3px 10px 5px rgb(153, 224, 236);
     animation: anime2 1ms ease-in-out 0s infinite forwards;
     
 }
 
-.body2{
-    width: 100%;
-    height: 50vh;
-    background-color: aqua;
-}
+
 .body2{
     background-image: url(https://t4.ftcdn.net/jpg/02/67/40/21/360_F_267402109_jZvsqRQUvSxohAOmcUt549jlapqoRHM0.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    width: 100%;
+    height: 50vh;
+    background-color: aqua;
     
 }
 .slider{
@@ -136,7 +135,7 @@ nav ul li a{
     width: 60vw;
     height: 40vh;
     box-shadow: 10px 10px 10px;
-    margin: 5rem auto;
+    margin: auto;
     overflow: hidden;
     padding: 6vh;
     
@@ -146,24 +145,24 @@ nav ul li a{
     grid-template-columns: repeat(4,100%);
     height: 100%;
     width: 100%;
-    animation: sliders 30s ease-in-out infinite alternate ;
+    animation: sliders 10s ease-in-out infinite alternate ;
     
 }
 .slider #sliderimg1 {
-    background-color: rgb(30, 235, 235);
+    background-image: url(https://scontent.fvns2-1.fna.fbcdn.net/v/t1.6435-9/52825964_1961234767504809_7606931777558413312_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=k2SaJeM9YYoQ7kNvgFpZjjp&_nc_ht=scontent.fvns2-1.fna&oh=00_AYAyWRPWVqYe15SWu9QHU5AnfRXWF9QyN-dGQn5eKnEAMg&oe=66C02D45);
      background-position: center;
 }
 .slider #sliderimg2 {
-    background-color: rgb(141, 155, 155);
+    background-image: url(https://scontent.fvns2-1.fna.fbcdn.net/v/t1.18169-9/24993631_1742316659396622_4657720362555073449_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=cCmzEWbeiLMQ7kNvgEGOy1a&_nc_ht=scontent.fvns2-1.fna&oh=00_AYDJFpU9QHAwEpq-NvEJUbpwc8v9cBRQaII2N7XlL2myLA&oe=66C01AEA);
      background-position: center;
 }
 .slider #sliderimg3 {
-    background-color: rgb(73, 92, 92);
+    background-image: url(https://scontent.fvns2-1.fna.fbcdn.net/v/t39.30808-6/292058307_551093160044311_4253159747702752383_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=BgWamZlFvmIQ7kNvgE_DBFz&_nc_ht=scontent.fvns2-1.fna&oh=00_AYAvzGd93ilWIlsbID-ARNSKgFU_zhaOo7i8TNyrO8SMOg&oe=669EB475);
      background-position: center;
 }
 .slider #sliderimg4 {
-    background-color: rgb(30, 235, 235);
-     background-position: center;
+    background-image: url(https://scontent.fvns2-1.fna.fbcdn.net/v/t1.6435-9/52825964_1961234767504809_7606931777558413312_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=k2SaJeM9YYoQ7kNvgFpZjjp&_nc_ht=scontent.fvns2-1.fna&oh=00_AYAyWRPWVqYe15SWu9QHU5AnfRXWF9QyN-dGQn5eKnEAMg&oe=66C02D45);
+      background-position: center;
 }
 .slider .buttonholder .button{
     background-color: white;
@@ -184,7 +183,7 @@ nav ul li a{
     20%{transform: translateX(-100%);}
     30%{transform: translateX(-200%);}
     40%{transform: translateX(-200%);}
-    50%{transform: translateX(0%);}    
+    50%{transform: translateX(-200%);}    
     60%{transform: translateX(-300%);}
     70%{transform: translateX(-300%);}
     80%{transform: translateX(-300%);}
