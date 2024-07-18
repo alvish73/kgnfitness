@@ -253,6 +253,33 @@ font-family: 'Poppins', sans-serif;
     padding-top: 1vh;
     padding-bottom: 2vh;
 }
+
+.franchise{
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(#ffdad5, #fff7f9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+}
+.franchise a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-size: 15px;
+    border: 2px solid black;
+    padding: 4px;
+    border-radius: 5px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    
+}
+.franchise img{
+    size: 15px;
+}
+
 .map{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
