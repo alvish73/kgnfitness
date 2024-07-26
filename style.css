@@ -1,27 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&family=Vujahday+Script&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Rye&family=Seaweed+Script&family=Vujahday+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Rye&family=Seaweed+Script&family=Vujahday+Script&display=swap');
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.hero{
+
+.hero {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
     position: relative;
     padding: 0px 5%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.hero .content h1,h3{
+
+.hero .content h1,
+h3 {
     font-family: "Press Start 2P", system-ui;
     font-size: 20px;
     padding: 3px;
 }
-nav{
+
+nav {
     width: 100%;
     position: absolute;
     top: 0;
@@ -31,37 +37,46 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-nav .logo{
+
+nav .logo {
     width: 80px;
     background-blend-mode: normal;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
     display: inline-block;
     margin-left: 2vw;
     font-family: "Poppins", sans-serif;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
-    color: #fff ;
+    color: #fff;
     font-size: 2vh;
+    
 }
-.content h1,h3{
+
+.content h1,h3 {
     font-size: 6vh;
     font-weight: 600;
     align-items: center;
     transition: 0.3s;
     color: white;
+    font-family: "Rye", serif;
 }
-.content h1:hover{
+
+.content h1:hover {
     -webkit-text-stroke: 2px #fff;
     color: transparent;
 }
-.content h3:hover{
+
+.content h3:hover {
     -webkit-text-stroke: 2px #fc0404;
     color: transparent;
 }
-.content a{
+
+.content a {
     text-decoration: none;
     display: inline-block;
     font-size: 21px;
@@ -73,47 +88,56 @@ nav ul li a{
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 10px;
+    font-weight: 500;
+    font-family: "Nerko One", cursive;
 }
-.content a:hover{
+
+.content a:hover {
     background-color: #fff;
     color: black;
 }
-.backvideo{
+
+.backvideo {
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: -1;
     width: 100%;
 }
+
 @media (max-aspect-ratio: 16/9) {
     .backvideo {
         width: auto;
         height: 100%;
     }
-    
+
 }
+
 @media (min-aspect-ratio: 16/9) {
     .backvideo {
         width: 100%;
         height: auto;
     }
-    
+
 }
 
-.legacy{
+.legacy {
     display: flex;
     justify-content: space-around;
-    background-image: url(ASSET/I/backiee-265661-landscape.jpg); 
+    background-image: url(ASSET/I/backiee-265661-landscape.jpg);
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    
+
 }
-.legacytext{
+
+.legacytext {
     padding: 5vw;
 }
-.legacytext h2{
+
+.legacytext h2 {
     text-shadow: none;
     text-align: center;
     font-family: "Vujahday Script", cursive;
@@ -121,12 +145,14 @@ nav ul li a{
     font-size: 35px;
     color: silver;
 }
-.legacytext h4{
+
+.legacytext h4 {
     color: silver;
     margin-top: 22px;
     font-family: "Vujahday Script", cursive;
     font-weight: 400;
 }
+
 .legacyimg img {
     position: relative;
     height: 100px;
@@ -134,121 +160,51 @@ nav ul li a{
 }
 
 
-.body2{
-    background-image: url(ASSET/I/—Pngtree—an\ old\ gym\ setting\ with_2667256.jpg);
-    
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
-    height: 50vh;
-    background-color: aqua;
-    
-}
-.slider{
-    position: relative;
-    
-}
-.slider .wrapper{
-    width: 70vw;
-    height: 40vh;
-    /* box-shadow: 5px 10px 10px; */
-    margin: auto;
-    overflow: hidden;
-    padding: 6vh;
-    
-}
-.slider .wrapper .wrapperholder{
-    display: grid;
-    grid-template-columns: repeat(4,100%);
-    height: 100%;
-    width: 100%;
-    animation: sliders 10s ease-in-out infinite alternate ;
-    
-}
-.slider #sliderimg1 {
-    background-image: url(https://scontent.fvns2-1.fna.fbcdn.net/v/t1.6435-9/52825964_1961234767504809_7606931777558413312_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=k2SaJeM9YYoQ7kNvgFpZjjp&_nc_ht=scontent.fvns2-1.fna&oh=00_AYAyWRPWVqYe15SWu9QHU5AnfRXWF9QyN-dGQn5eKnEAMg&oe=66C02D45);
-     background-position: center;
-}
-.slider #sliderimg2 {
-    background-image: url(https://scontent.fvns2-1.fna.fbcdn.net/v/t1.18169-9/24993631_1742316659396622_4657720362555073449_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=cCmzEWbeiLMQ7kNvgEGOy1a&_nc_ht=scontent.fvns2-1.fna&oh=00_AYDJFpU9QHAwEpq-NvEJUbpwc8v9cBRQaII2N7XlL2myLA&oe=66C01AEA);
-     background-position: center;
-}
-.slider #sliderimg3 {
-    background-image: url(https://scontent.fvns2-1.fna.fbcdn.net/v/t39.30808-6/292058307_551093160044311_4253159747702752383_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=BgWamZlFvmIQ7kNvgE_DBFz&_nc_ht=scontent.fvns2-1.fna&oh=00_AYAvzGd93ilWIlsbID-ARNSKgFU_zhaOo7i8TNyrO8SMOg&oe=669EB475);
-     background-position: center;
-}
-.slider #sliderimg4 {
-    background-image: url(https://scontent.fvns2-1.fna.fbcdn.net/v/t1.6435-9/52825964_1961234767504809_7606931777558413312_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=k2SaJeM9YYoQ7kNvgFpZjjp&_nc_ht=scontent.fvns2-1.fna&oh=00_AYAyWRPWVqYe15SWu9QHU5AnfRXWF9QyN-dGQn5eKnEAMg&oe=66C02D45);
-      background-position: center;
-}
-.slider .buttonholder .button{
-    background-color: white;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 2px;   
-}
-.slider .buttonholder{
-    position: absolute;
-    left: 45%;
-    bottom: 0%;
-}
-@keyframes sliders {
-    0%{transform: translateX(0%);}
-    10%{transform: translateX(-100%);}
-    20%{transform: translateX(-100%);}
-    30%{transform: translateX(-200%);}
-    40%{transform: translateX(-200%);}
-    50%{transform: translateX(-200%);}    
-    60%{transform: translateX(-300%);}
-    70%{transform: translateX(-300%);}
-    80%{transform: translateX(-300%);}
-    90%{transform: translateX(0%);}
-    100%{transform: translateX(0%);}
-}
-
-.card{
+.card {
     background-color: rgb(212, 208, 208);
-    width: 198px; 
+    width: 198px;
     border-radius: 7px;
     padding: 0 0 34px 0;
     margin: 4px;
     border: 2px solid rgb(82, 81, 81);
 }
 
-.image{
+.image {
     padding: 5px;
 }
-.image img{
+
+.image img {
     border-radius: 7px;
 }
-.content{
-    padding: 7px 13px; 
-font-family: 'Poppins', sans-serif;
+
+.content {
+    padding: 7px 13px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.content p{
+.content p {
     font-size: 12px;
     color: black;
 }
 
-.capsules{
+.capsules {
     padding: 0 28px 0 14px;
 }
-.capsules span{
+
+.capsules span {
     border: 1px solid gray;
     padding: 0px 6px;
     border-radius: 7px;
     font-size: 8px;
-    font-family: 'Baloo Bhai 2', sans-serif; 
+    font-family: 'Baloo Bhai 2', sans-serif;
 
 }
-.button{
+
+.button {
     text-align: center;
 }
-.button button{
+
+.button button {
     padding: 7px 15px;
     border-radius: 15px;
     background-color: grey;
@@ -259,27 +215,88 @@ font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
 
-.button button:hover{
+.button button:hover {
     background-color: rgb(194, 225, 246);
     color: rgb(10, 136, 214);
 }
-.service{
+
+.service {
     display: grid;
     background-image: url(ASSET/I/cast-iron-dumbbell-weights.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
     padding-top: 1vh;
     padding-bottom: 2vh;
 }
+.trainer{
+    background-image: url(ASSET/I/—Pngtree—an\ old\ gym\ setting\ with_2667256.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.tcard{
+    width: 198px;
+    height: 355px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid #5f5b5b;
+    position: relative;
 
-.franchise{
+}
+.tcard-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+
+}
+.tcard-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+    background-color: #5f5b5b94;
+}
+.tcard-title{
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: 900;
+}
+.tcard-sub-title{
+      text-transform: capitalize;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 25px;
+      color: #fff;
+}
+.tcard:hover .tcard-body{
+    right: 0;
+}
+.tcard:hover .tcard-img{
+    filter: blur(3px);
+}
+.franchise {
     width: 100%;
     height: 30vh;
-    /* background: linear-gradient(#ffdad5, #fff7f9); */
     background-image: url(ASSET/I/—Pngtree—an\ old\ gym\ setting\ with_2667256.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -291,7 +308,8 @@ font-family: 'Poppins', sans-serif;
     gap: 10px;
     padding-left: 10px;
 }
-.franchise a{
+
+.franchise a {
     text-decoration: none;
     color: #000000;
     font-weight: 600;
@@ -300,16 +318,14 @@ font-family: 'Poppins', sans-serif;
     padding: 4px;
     border-radius: 5px;
     background: linear-gradient(270deg, #ff994f, #fa6d86);
-    
-}
-.franchise img{
-    size: 15px;
-}
 
-.map{
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    justify-items: center;
-    background-color: rgb(160, 160, 156);
-    padding: 3vh; */
+}
+.franchise h3{
+    color: crimson;
+}
+.franchise h4{
+    color: white;
+}
+.franchise img {
+    size: 15px;
 }
